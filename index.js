@@ -36,7 +36,7 @@ program
     .option('-e, --email, <type>')
     .option('-p, --phone, <type>')
     
-program.parse();
+program.parse(process.argv);
 const options = program.opts();
 
 invokeAction(options)
